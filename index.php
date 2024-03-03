@@ -53,7 +53,7 @@
 </div>
 <!-- all course add heading start -->
 
-<!--HTML Section Start-->
+<!--Categories Section Start-->
 <?php
 foreach ($cat_arr as $list) {
 ?>
@@ -69,6 +69,6 @@ foreach ($cat_arr as $list) {
 <?php
 }
 ?>
-<!--HTML Section End-->
+<!--Categories Section End-->
 
 <?php require('footer.php'); ?>
