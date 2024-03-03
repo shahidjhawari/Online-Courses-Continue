@@ -47,13 +47,13 @@
               <a class="nav-link" href="index.html"><b>HOME</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="coming_soon.html"><b>COURSES</b></a>
+              <a class="nav-link" href="coming_soon.php"><b>COURSES</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="coming_soon.html"><b>PROJECTS</b></a>
+              <a class="nav-link" href="coming_soon.php"><b>PROJECTS</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="coming_soon.html"><b>SIGN UP</b></a>
+              <a class="nav-link" href="coming_soon.php"><b>SIGN UP</b></a>
             </li>
           </ul>
         </div>
