@@ -5,6 +5,7 @@
         max-width: 400px;
         margin: 50px auto;
     }
+
     .btn {
         margin-top: 10px;
     }
@@ -25,7 +26,7 @@
                     <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Enter your password" required>
                     <span class="field_error" id="login_password_error"></span>
                 </div>
-                <button type="button" class="btn btn-primary btn-block" onclick="user_login()">Login</button>
+                <button type="button" class="btn btn-warning btn-block" onclick="user_login()">Login</button>
             </form>
             <div class="form-output login_msg">
                 <p class="form-messege field_error"></p>
@@ -55,7 +56,7 @@
                     <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required>
                     <span class="field_error" id="password_error"></span>
                 </div>
-                <button type="button" class="btn btn-primary btn-block" onclick="user_register()">Register</button>
+                <button type="button" class="btn btn-warning btn-block" onclick="user_register()">Register</button>
             </form>
             <div class="form-output register_msg">
                 <p class="form-messege field_error"></p>
