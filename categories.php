@@ -1,21 +1,43 @@
-<?php require('top.php'); ?>
+<?php
+require('top.php');
+if (isset($_GET['id']) && $_GET['id'] != '') {
+    $cat_id = mysqli_real_escape_string($con, $_GET['id']);
+    if ($cat_id > 0) {
+        $get_product = get_product($con, '', $cat_id);
+    } else {
+?>
+        <script>
+            window.location.href = 'index.php';
+        </script>
+    <?php
+    }
+} else {
+    ?>
+    <script>
+        window.location.href = 'index.php';
+    </script>
+<?php
+}
+?>
 
 <!--HTML All Tags Section Start-->
-<div class="container">
-    <!-- Courses Heading Start -->
-    <div class="form html-tags-search">
-        <div class="searchbar">
-            <input class="search_input" type="text" id="searchInput" placeholder="Search tags...">
+<?php if (count($get_product) > 0) { ?>
+    <div class="container">
+        <div class="list-group all-html-tags">
+            <?php
+            foreach ($get_product as $list) {
+            ?>
+                <code>
+                    <a href="#" class="list-group-item list-group-item-action tag-css"><span>
+                            <<span class="html-tag"><?php echo $list['name'] ?>
+                        </span><span>></span> <?php echo $list['price'] ?></a>
+                </code>
+            <?php } ?>
         </div>
     </div>
-    <!-- Courses Heading End -->
-    <div class="list-group all-html-tags">
-        <code>
-            <a href="html/a.html" class="list-group-item list-group-item-action tag-css"><span>
-                    << /span><span class="html-tag">a</span><span>></span> Defines a hyperlink</a>
-        </code>
-    </div>
-</div>
+<?php } else {
+    echo "Data not found";
+} ?>
 <!--HTML All Tags Section End-->
 
 <?php require('footer.php'); ?>
