@@ -6,9 +6,3 @@ window.onscroll = function(){
     document.getElementById("progress").style.width = scroll + "%" ;
 }
 
-// Loader here
-window.onload = function(){
- document.getElementById("loader").style.display = "none";
- document.getElementById("mainContent").style.display = "block";
-}
-

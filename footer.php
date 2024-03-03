@@ -11,6 +11,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
   <!--Font Awesome files Here-->
-  <link media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
 </body>
 </html>
