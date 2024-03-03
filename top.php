@@ -28,14 +28,16 @@ while($row=mysqli_fetch_assoc($cat_res)){
   <meta name="author" content="MAHAR SHAHID IQBAL JHAWARI">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NAWAB ACADEMY</title>
+  
+  <!--Bootstrap files Here-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
   <!--Own files Here-->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="icon" href="img/logo_bg_remove.png">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6521349394702804"
-    crossorigin="anonymous"></script>
 </head>
-
 <body>
 
   <!--Header Section Start-->
