@@ -5,6 +5,9 @@
         max-width: 400px;
         margin: 50px auto;
     }
+    .btn {
+        margin-top: 10px;
+    }
 </style>
 
 <div class="container">
@@ -35,18 +38,22 @@
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                    <span class="field_error" id="name_error"></span>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                    <span class="field_error" id="email_error"></span>
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone</label>
                     <input type="tel" class="form-control" name="mobile" id="mobile" placeholder="Enter your phone number" required>
+                    <span class="field_error" id="mobile_error"></span>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required>
+                    <span class="field_error" id="password_error"></span>
                 </div>
                 <button type="button" class="btn btn-primary btn-block" onclick="user_register()">Register</button>
             </form>
