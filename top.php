@@ -71,5 +71,6 @@ while ($row = mysqli_fetch_assoc($cat_res)) {
       </div>
     </div>
   </nav>
+  <div id="progress"></div>
 </header>
   <!--Header Section End-->
