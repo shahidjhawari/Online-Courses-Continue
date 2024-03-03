@@ -31,8 +31,8 @@ $res=mysqli_query($con,$sql);
 		  <div class="col-xl-12">
 			 <div class="card">
 				<div class="card-body">
-				   <h4 class="box-title">Courses </h4>
-				   <h4 class="box-link"><a href="manage_categories.php">Add Courses</a> </h4>
+				   <h4 class="box-title">Categories </h4>
+				   <h4 class="box-link"><a href="manage_categories.php">Add Categories</a> </h4>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
@@ -41,7 +41,7 @@ $res=mysqli_query($con,$sql);
 							<tr>
 							   <th class="serial">#</th>
 							   <th>ID</th>
-							   <th>Courses</th>
+							   <th>Categories</th>
 							   <th></th>
 							</tr>
 						 </thead>
@@ -56,7 +56,7 @@ $res=mysqli_query($con,$sql);
 							   <td>
 								<?php
 								if($row['status']==1){
-									echo "";
+									echo "<span class='badge badge-complete'><a href='?type=status&operation=deactive&id=".$row['id']."'>Active</a></span>&nbsp;";
 								}else{
 									echo "<span class='badge badge-pending'><a href='?type=status&operation=active&id=".$row['id']."'>Deactive</a></span>&nbsp;";
 								}

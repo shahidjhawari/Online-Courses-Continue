@@ -127,8 +127,18 @@ if(isset($_POST['submit'])){
 								</div>
 								
 								<div class="form-group">
-									<label for="categories" class=" form-control-label">Detail</label>
-									<input type="text" name="price" placeholder="Enter product price" class="form-control" required>
+									<label for="categories" class=" form-control-label">MRP</label>
+									<input type="text" name="mrp" placeholder="Enter product mrp" class="form-control" required value="<?php echo $mrp?>">
+								</div>
+								
+								<div class="form-group">
+									<label for="categories" class=" form-control-label">Price</label>
+									<input type="text" name="price" placeholder="Enter product price" class="form-control" required value="<?php echo $price?>">
+								</div>
+								
+								<div class="form-group">
+									<label for="categories" class=" form-control-label">Qty</label>
+									<input type="text" name="qty" placeholder="Enter qty" class="form-control" required value="<?php echo $qty?>">
 								</div>
 								
 								<div class="form-group">
@@ -141,6 +151,10 @@ if(isset($_POST['submit'])){
 									<textarea name="short_desc" placeholder="Enter product short description" class="form-control" required><?php echo $short_desc?></textarea>
 								</div>
 								
+								<div class="form-group">
+									<label for="categories" class=" form-control-label">Description</label>
+									<textarea name="description" placeholder="Enter product description" class="form-control" required><?php echo $description?></textarea>
+								</div>
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Meta Title</label>

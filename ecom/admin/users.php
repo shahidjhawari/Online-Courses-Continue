@@ -19,7 +19,7 @@ $res=mysqli_query($con,$sql);
 		  <div class="col-xl-12">
 			 <div class="card">
 				<div class="card-body">
-				   <h4 class="box-title">Register Users </h4>
+				   <h4 class="box-title">Users </h4>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">

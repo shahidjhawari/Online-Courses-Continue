@@ -48,12 +48,12 @@ if(isset($_POST['submit'])){
                <div class="row">
                   <div class="col-lg-12">
                      <div class="card">
-                        <div class="card-header"><strong>Courses</strong><small> Form</small></div>
+                        <div class="card-header"><strong>Categories</strong><small> Form</small></div>
                         <form method="post">
 							<div class="card-body card-block">
 							   <div class="form-group">
-									<label for="categories" class=" form-control-label">Courses</label>
-									<input type="text" name="categories" placeholder="Enter courses name" class="form-control" required value="<?php echo $categories?>">
+									<label for="categories" class=" form-control-label">Categories</label>
+									<input type="text" name="categories" placeholder="Enter categories name" class="form-control" required value="<?php echo $categories?>">
 								</div>
 							   <button id="payment-button" name="submit" type="submit" class="btn btn-lg btn-info btn-block">
 							   <span id="payment-button-amount">Submit</span>
