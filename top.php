@@ -64,6 +64,9 @@ while ($row = mysqli_fetch_assoc($cat_res)) {
           <li class="nav-item">
             <a class="nav-link" href="login.php"><b>SIGN UP</b></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.php"><b>CONTACT US</b></a>
+          </li>
         </ul>
       </div>
     </div>
