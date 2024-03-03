@@ -9,6 +9,18 @@
     .btn {
         margin-top: 10px;
     }
+
+    .password-toggle {
+        position: relative;
+    }
+
+    .password-toggle .fa-eye {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(20%);
+        cursor: pointer;
+    }
 </style>
 
 <div class="container">
@@ -21,10 +33,11 @@
                     <input type="email" class="form-control" name="login_email" id="login_email" placeholder="Enter your email" required>
                     <span class="field_error" id="login_email_error"></span>
                 </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
+                <div class="form-group password-toggle">
+                    <label for="login_password">Password</label>
                     <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Enter your password" required>
                     <span class="field_error" id="login_password_error"></span>
+                    <i class="fas fa-eye" id="toggleLoginPassword"></i>
                 </div>
                 <button type="button" class="btn btn-warning btn-block" onclick="user_login()">Login</button>
             </form>
@@ -51,10 +64,11 @@
                     <input type="tel" class="form-control" name="mobile" id="mobile" placeholder="Enter your phone number" required>
                     <span class="field_error" id="mobile_error"></span>
                 </div>
-                <div class="form-group">
+                <div class="form-group password-toggle">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required>
                     <span class="field_error" id="password_error"></span>
+                    <i class="fas fa-eye" id="togglePassword"></i>
                 </div>
                 <button type="button" class="btn btn-warning btn-block" onclick="user_register()">Register</button>
             </form>
@@ -64,5 +78,25 @@
         </div>
     </div>
 </div>
+
+<script>
+    const passwordInput = document.getElementById('password');
+    const togglePasswordButton = document.getElementById('togglePassword');
+
+    togglePasswordButton.addEventListener('click', function() {
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        this.classList.toggle('fa-eye-slash');
+    });
+
+    const loginPasswordInput = document.getElementById('login_password');
+    const toggleLoginPasswordButton = document.getElementById('toggleLoginPassword');
+
+    toggleLoginPasswordButton.addEventListener('click', function() {
+        const type = loginPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        loginPasswordInput.setAttribute('type', type);
+        this.classList.toggle('fa-eye-slash');
+    });
+</script>
 
 <?php require('footer.php'); ?>
