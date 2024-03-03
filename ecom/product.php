@@ -23,7 +23,7 @@ if (isset($_GET['id'])) {
 <!-- YouTube Video Section start -->
 <div class="container yt-video-html-box">
     <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/uLXNGMQW-R0?si=w8ZGsOcfQyitlukK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <?php echo $get_product['0']['short_desc']?>
     </div>
 </div>
 <!-- YouTube Video Section start -->
@@ -48,7 +48,7 @@ if (isset($_GET['id'])) {
     </div>
 </div>
 <div class="container d-flex align-items-center justify-content-center download-btn">
-    <a href="img/a-tag.png" download="a tag - NAWAB ACADEMY" class="btn btn-danger">Download</a>
+<a href="<?php PRODUCT_IMAGE_SITE_PATH.$get_product['0']['image']?>" download="a.png" class="btn btn-danger">Download</a>
 </div>
 <!--Tag Section End-->
 
