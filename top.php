@@ -44,9 +44,9 @@ while($row=mysqli_fetch_assoc($cat_res)){
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
       <div class="container container-css">
-        <a href="index.html"><img src="img/logo_bg_remove.png" alt="NAWAB LOGO"
+        <a href="index.php"><img src="img/logo_bg_remove.png" alt="NAWAB LOGO"
             title="NAWAB ACADEMY - Jhawarian, Sargodha, Punjab, Pakistan" width="50px"></a>
-        <a class="navbar-brand" href="index.html" title="NAWAB ACADEMY - Jhawarian, Sargodha, Punjab, Pakistan"><b>NAWAB
+        <a class="navbar-brand" href="index.php" title="NAWAB ACADEMY - Jhawarian, Sargodha, Punjab, Pakistan"><b>NAWAB
             ACADEMY</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="coming_soon.htmlnavbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -56,21 +56,20 @@ while($row=mysqli_fetch_assoc($cat_res)){
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html"><b>HOME</b></a>
+              <a class="nav-link" href="index.php"><b>HOME</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="coming_soon.html"><b>COURSES</b></a>
+              <a class="nav-link" href="#"><b>COURSES</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="coming_soon.html"><b>PROJECTS</b></a>
+              <a class="nav-link" href="#"><b>PROJECTS</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="coming_soon.html"><b>SIGN UP</b></a>
+              <a class="nav-link" href="#"><b>SIGN UP</b></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div id="progress"></div>
   </header>
   <!--Header Section End-->
