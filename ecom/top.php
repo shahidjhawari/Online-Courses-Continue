@@ -6,6 +6,25 @@ $cat_arr = array();
 while ($row = mysqli_fetch_assoc($cat_res)) {
   $cat_arr[] = $row;
 }
+
+
+$script_name = $_SERVER['SCRIPT_NAME'];
+$script_name_arr = explode('/', $script_name);
+$mypage = $script_name_arr[count($script_name_arr) - 1];
+
+$meta_title = "My Ecom Website";
+$meta_desc = "My Ecom Website";
+$meta_keyword = "My Ecom Website";
+if ($mypage == 'product.php') {
+  $product_id = get_safe_value($con, $_GET['id']);
+  $product_meta = mysqli_fetch_assoc(mysqli_query($con, "select * from product where id='$product_id'"));
+  $meta_title = $product_meta['meta_title'];
+  $meta_desc = $product_meta['meta_desc'];
+  $meta_keyword = $product_meta['meta_keyword'];
+}
+if ($mypage == 'contact.php') {
+  $meta_title = 'Contact Us';
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,20 +33,11 @@ while ($row = mysqli_fetch_assoc($cat_res)) {
 <head>
   <!--All Meta Tags Here-->
   <meta charset="UTF-8">
-  <meta name="keyword" content="nawab, nawab academy, academy, shahid, shahid iqbal, shahid iqbal jhawari, mahar shahid iqbal jhawari, course, 
-    courses, nawab courses, nawab academy courses, nawab academy course, 
-    shahid iqbal course, nawab html course, nawab css course, 
-    nawab javascript course, nawab html, nawab css, nawab java script, 
-    jhawarian, jhawarian academy, jhawarian courses, jhawarian web development, 
-    web development, web development course, web development nawab, nawab web development, 
-    nawab ethical hacking, nawab app development, app development course, android app development course, 
-    nawab academy app development, jhawarian no 1 academy, sargodha no 1 academy, pakistan no 1 academy, html, 
-    css, java script, php, my sql, python,ethical hacking, html course, css course, java script course, php course, 
-    my sql course, python course, ethical hacking course,">
-  <meta name="discription" content="NAWAB Web Development acdemy in Sargodha, Jhawarian, HTLM, CSS, JS, PHP, MYSQL, PYTHON online & classes courses">
+  <meta name="keyword" content="<?php echo $meta_keyword ?>">
+  <meta name="discription" content="<?php echo $meta_desc ?>">
   <meta name="author" content="MAHAR SHAHID IQBAL JHAWARI">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NAWAB ACADEMY</title>
+  <title><?php echo $meta_title ?></title>
 
   <!--Bootstrap files Here-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
