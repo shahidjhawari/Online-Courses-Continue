@@ -82,7 +82,9 @@ if ($mypage == 'contact.php') {
         </div>
       </div>
     </nav>
-    <div id="header2"></div>
+    <div id="header2">
+      <p>12.23.2024</p>
+    </div>
     <div id="progress"></div>
   </header>
   <!--Header Section End-->
