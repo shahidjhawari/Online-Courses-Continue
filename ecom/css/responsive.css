@@ -135,4 +135,16 @@
         top: 70px;
         right: -76px
     }
+    #header2 {
+        background: #191919;
+        width: 100%;
+        height: 40px;
+    }
+    
+    #header2 p {
+        font-size: 15px;
+        margin-left: 20px;
+        margin-top: 5px;
+        color: #fff;
+    }
 }

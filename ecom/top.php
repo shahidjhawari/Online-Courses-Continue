@@ -74,15 +74,15 @@ if ($mypage == 'contact.php') {
               <a class="nav-link" href="coming_soon.php"><b>PROJECTS</b></a>
             </li>
             <li class="nav-item">
-              <?php if (isset($_SESSION['USER_LOGIN'])) {
-                echo '<a href="logout.php" class="nav-link"><b>Logout</b></a>';
-              } else {
-                echo '<a href="login.php" class="nav-link"><b>Login/Register</b></a>';
-              }
-              ?>
+              <a class="nav-link" href="contactus.php"><b>CONTACT US</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contactus.php"><b>CONTACT US</b></a>
+              <?php if (isset($_SESSION['USER_LOGIN'])) {
+                echo '<a href="logout.php" class="nav-link"><b>LOGOUT</b></a>';
+              } else {
+                echo '<a href="login.php" class="nav-link"><b>SINGUP</b></a>';
+              }
+              ?>
             </li>
           </ul>
         </div>
@@ -95,9 +95,9 @@ if ($mypage == 'contact.php') {
       <p><?php echo date('F d, Y'); ?> | Welcome <?php if (isset($_SESSION['USER_LOGIN'])) { ?>
           <?php echo $_SESSION['USER_NAME'] ?>
         <?php
-          } else {
-            echo 'User';
-          } ?></p>
+                                                  } else {
+                                                    echo 'User';
+                                                  } ?></p>
     </div>
     <div id="progress"></div>
   </header>
