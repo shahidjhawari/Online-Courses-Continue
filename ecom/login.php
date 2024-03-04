@@ -51,7 +51,7 @@
             <form id="register-form" method="post">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" minlength="10" maxlength="15" name="name" id="name" placeholder="Enter your name" required>
+                    <input type="text" class="form-control" maxlength="15" name="name" id="name" placeholder="Enter your name" required>
                     <span class="field_error" id="name_error"></span>
                 </div>
                 <div class="form-group">

@@ -115,5 +115,5 @@ if ($mypage == 'contact.php') {
     </div>
     <div id="progress"></div>
   </header>
-  <marquee id="news" behavior="" scrollamount="12">ADMISSION OPEN FROM 1 MAY 2024 - FOR ONLY JHAWARIAN`S STUDENTS - WEB DEVELOPMENT & WEB DESIGNING COURSES - ADMISSION NOW</marquee>
+  <marquee id="news" behavior="" scrollamount="13">ADMISSION OPEN FROM 1 MAY 2024 - FOR ONLY JHAWARIAN`S STUDENTS - WEB DEVELOPMENT & WEB DESIGNING COURSES - ADMISSION NOW</marquee>
   <!--Header Section End-->
