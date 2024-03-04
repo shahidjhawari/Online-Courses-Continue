@@ -160,6 +160,7 @@ header {
 #progress {
     background-color: #7D0A0A;
     height: -1px;
+    width: 0;
 }
 
 .titlepage {
