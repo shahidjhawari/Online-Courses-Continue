@@ -1,6 +1,7 @@
 <?php
 require('connection.inc.php');
 require('functions.inc.php');
+date_default_timezone_set('Asia/Karachi');
 
 $name=get_safe_value($con,$_POST['name']);
 $email=get_safe_value($con,$_POST['email']);
