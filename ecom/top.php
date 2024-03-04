@@ -82,6 +82,7 @@ if ($mypage == 'contact.php') {
         </div>
       </div>
     </nav>
+    <div id="header2"></div>
     <div id="progress"></div>
   </header>
   <!--Header Section End-->
