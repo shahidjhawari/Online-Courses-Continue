@@ -45,6 +45,10 @@ date_default_timezone_set('Asia/Karachi');
 				  <li class="menu-item-has-children dropdown">
                      <a href="contact_us.php" > Contact Us</a>
                   </li>
+
+                  <li class="menu-item-has-children dropdown">
+                     <a href="manage_admission.php" > Admission</a>
+                  </li>
 				  
                </ul>
             </div>
