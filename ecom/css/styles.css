@@ -158,9 +158,8 @@ header {
 }
 
 #progress {
-    background-color: #000;
-    height: 7px;
-    width: 0
+    background-color: #7D0A0A;
+    height: -1px;
 }
 
 .titlepage {
