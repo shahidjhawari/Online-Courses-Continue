@@ -28,9 +28,7 @@ if (isset($_GET['id']) && $_GET['id'] != '') {
             foreach ($get_product as $list) {
             ?>
                 <code>
-                    <a href="product.php?id=<?php echo $list['id']?>" class="list-group-item list-group-item-action tag-css"><span>
-                            <<span class="html-tag"><?php echo $list['name'] ?>
-                        </span><span>></span> <?php echo $list['price'] ?></a>
+                    <a href="product.php?id=<?php echo $list['id']?>" class="list-group-item list-group-item-action tag-css"><span><</span><span class="html-tag"><?php echo $list['name'] ?></span><span>></span> <?php echo $list['price'] ?></a>
                 </code>
             <?php } ?>
         </div>
