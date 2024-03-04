@@ -319,3 +319,12 @@ img {
     margin-top: 7px;
     color: #fff;
 }
+
+#news {
+    color: white;
+    position: fixed;
+    z-index: 2;
+    width: 77%;
+    transform: translateY(-33px);
+    margin-left: 350px;
+}
