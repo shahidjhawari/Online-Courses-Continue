@@ -7,6 +7,7 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
 	header('location:login.php');
 	die();
 }
+date_default_timezone_set('Asia/Karachi');
 ?>
 <!doctype html>
 <html class="no-js" lang="">
