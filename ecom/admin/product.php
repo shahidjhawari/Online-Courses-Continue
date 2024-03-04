@@ -41,13 +41,10 @@ $res=mysqli_query($con,$sql);
 							<tr>
 							   <th class="serial">#</th>
 							   <th width="2%">ID</th>
-							   <th width="10%">Categories</th>
+							   <th width="10%">Courses</th>
 							   <th width="30%">Name</th>
 							   <th width="10%">Image</th>
-							   <th width="10%">MRP</th>
-							   <th width="7%">Price</th>
-							   <th width="7%">Qty</th>
-							   <th width="26%"></th>
+							   <th width="7%">Detail</th>
 							</tr>
 						 </thead>
 						 <tbody>
@@ -60,9 +57,7 @@ $res=mysqli_query($con,$sql);
 							   <td><?php echo $row['categories']?></td>
 							   <td><?php echo $row['name']?></td>
 							   <td><img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['image']?>"/></td>
-							   <td><?php echo $row['mrp']?></td>
 							   <td><?php echo $row['price']?></td>
-							   <td><?php echo $row['qty']?></td>
 							   <td>
 								<?php
 								if($row['status']==1){
