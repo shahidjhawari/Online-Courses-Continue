@@ -7,6 +7,7 @@ while ($row = mysqli_fetch_assoc($cat_res)) {
   $cat_arr[] = $row;
 }
 
+date_default_timezone_set('Asia/Karachi');
 
 $script_name = $_SERVER['SCRIPT_NAME'];
 $script_name_arr = explode('/', $script_name);
@@ -73,7 +74,12 @@ if ($mypage == 'contact.php') {
               <a class="nav-link" href="coming_soon.php"><b>PROJECTS</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.php"><b>SIGN UP</b></a>
+              <?php if (isset($_SESSION['USER_LOGIN'])) {
+                echo '<a href="logout.php" class="nav-link"><b>Logout</b></a>';
+              } else {
+                echo '<a href="login.php" class="nav-link"><b>Login/Register</b></a>';
+              }
+              ?>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contactus.php"><b>CONTACT US</b></a>
@@ -83,7 +89,15 @@ if ($mypage == 'contact.php') {
       </div>
     </nav>
     <div id="header2">
-      <p>12.23.2024</p>
+      <?php
+      date_default_timezone_set('Asia/Karachi');
+      ?>
+      <p><?php echo date('F d, Y'); ?> | Welcome <?php if (isset($_SESSION['USER_LOGIN'])) { ?>
+          <?php echo $_SESSION['USER_NAME'] ?>
+        <?php
+          } else {
+            echo 'User';
+          } ?></p>
     </div>
     <div id="progress"></div>
   </header>
