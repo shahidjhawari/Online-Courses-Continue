@@ -104,13 +104,13 @@ if(isset($_POST['submit'])){
                <div class="row">
                   <div class="col-lg-12">
                      <div class="card">
-                        <div class="card-header"><strong>Product</strong><small> Form</small></div>
+                        <div class="card-header"><strong>Tags & Properties</strong><small> Form</small></div>
                         <form method="post" enctype="multipart/form-data">
 							<div class="card-body card-block">
 							   <div class="form-group">
-									<label for="categories" class=" form-control-label">Categories</label>
+									<label for="categories" class=" form-control-label">Courses</label>
 									<select class="form-control" name="categories_id">
-										<option>Select Category</option>
+										<option>Select Courses</option>
 										<?php
 										$res=mysqli_query($con,"select id,categories from categories order by categories asc");
 										while($row=mysqli_fetch_assoc($res)){
@@ -125,10 +125,10 @@ if(isset($_POST['submit'])){
 									</select>
 								</div>
 								<div class="form-group">
-									<label for="categories" class=" form-control-label">Product Name</label>
-									<input type="text" name="name" placeholder="Enter product name" class="form-control" required value="<?php echo $name?>">
+									<label for="categories" class=" form-control-label">Name</label>
+									<input type="text" name="name" placeholder="Enter name" class="form-control" required value="<?php echo $name?>">
 								</div>
-								<div class="form-group">
+								<!-- <div class="form-group">
 									<label for="categories" class=" form-control-label">Best Seller</label>
 									<select class="form-control" name="best_seller" required>
 										<option value=''>Select</option>
@@ -145,20 +145,11 @@ if(isset($_POST['submit'])){
 										}
 										?>
 									</select>
-								</div>
-								<div class="form-group">
-									<label for="categories" class=" form-control-label">MRP</label>
-									<input type="text" name="mrp" placeholder="Enter product mrp" class="form-control" required value="<?php echo $mrp?>">
-								</div>
+								</div> -->
 								
 								<div class="form-group">
-									<label for="categories" class=" form-control-label">Price</label>
-									<input type="text" name="price" placeholder="Enter product price" class="form-control" required value="<?php echo $price?>">
-								</div>
-								
-								<div class="form-group">
-									<label for="categories" class=" form-control-label">Qty</label>
-									<input type="text" name="qty" placeholder="Enter qty" class="form-control" required value="<?php echo $qty?>">
+									<label for="categories" class=" form-control-label">Detail</label>
+									<input type="text" name="price" placeholder="Enter detail" class="form-control" required>
 								</div>
 								
 								<div class="form-group">
@@ -168,27 +159,27 @@ if(isset($_POST['submit'])){
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Short Description</label>
-									<textarea name="short_desc" placeholder="Enter product short description" class="form-control" required><?php echo $short_desc?></textarea>
+									<textarea name="short_desc" placeholder="Enter short description" class="form-control" required><?php echo $short_desc?></textarea>
 								</div>
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Description</label>
-									<textarea name="description" placeholder="Enter product description" class="form-control" required><?php echo $description?></textarea>
+									<textarea name="description" placeholder="Enter description" class="form-control" required><?php echo $description?></textarea>
 								</div>
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Meta Title</label>
-									<textarea name="meta_title" placeholder="Enter product meta title" class="form-control"><?php echo $meta_title?></textarea>
+									<textarea name="meta_title" placeholder="Enter meta title" class="form-control"><?php echo $meta_title?></textarea>
 								</div>
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Meta Description</label>
-									<textarea name="meta_desc" placeholder="Enter product meta description" class="form-control"><?php echo $meta_desc?></textarea>
+									<textarea name="meta_desc" placeholder="Enter meta description" class="form-control"><?php echo $meta_desc?></textarea>
 								</div>
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Meta Keyword</label>
-									<textarea name="meta_keyword" placeholder="Enter product meta keyword" class="form-control"><?php echo $meta_keyword?></textarea>
+									<textarea name="meta_keyword" placeholder="Enter meta keyword" class="form-control"><?php echo $meta_keyword?></textarea>
 								</div>
 								
 								

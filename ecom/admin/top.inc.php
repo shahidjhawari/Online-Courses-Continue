@@ -33,16 +33,13 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                <ul class="nav navbar-nav">
                   <li class="menu-title">Menu</li>
                   <li class="menu-item-has-children dropdown">
-                     <a href="categories.php" > Categories Master</a>
+                     <a href="categories.php" > Courses</a>
                   </li>
                   <li class="menu-item-has-children dropdown">
-                     <a href="product.php" > Product Master</a>
+                     <a href="product.php" > Tags & Properties</a>
                   </li>
 				  <li class="menu-item-has-children dropdown">
-                     <a href="order_master.php" > Order Master</a>
-                  </li>
-				  <li class="menu-item-has-children dropdown">
-                     <a href="users.php" > User Master</a>
+                     <a href="users.php" > All Users</a>
                   </li>
 				  <li class="menu-item-has-children dropdown">
                      <a href="contact_us.php" > Contact Us</a>
@@ -56,8 +53,6 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
          <header id="header" class="header">
             <div class="top-left">
                <div class="navbar-header">
-                  <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="Logo"></a>
-                  <a class="navbar-brand hidden" href="index.php"><img src="images/logo2.png" alt="Logo"></a>
                   <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                </div>
             </div>
