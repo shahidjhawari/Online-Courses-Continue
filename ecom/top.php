@@ -85,9 +85,11 @@ if ($mypage == 'contact.php') {
             <li class="nav-item">
               <a class="nav-link" href="contactus.php"><b>CONTACT US</b></a>
             </li>
+            <?php if (isset($_SESSION['USER_LOGIN'])) { ?>
             <li class="nav-item">
               <a class="nav-link" href="admision.php"><b>ADMISSION</b></a>
             </li>
+            <?php } ?>
             <li class="nav-item">
               <?php if (isset($_SESSION['USER_LOGIN'])) {
                 echo '<a href="logout.php" class="nav-link"><b>LOGOUT</b></a>';
