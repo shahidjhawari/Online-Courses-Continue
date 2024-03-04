@@ -106,7 +106,7 @@ if ($mypage == 'contact.php') {
       <?php
       date_default_timezone_set('Asia/Karachi');
       ?>
-      <p><?php echo date('F d, Y'); ?> | Welcome <?php if (isset($_SESSION['USER_LOGIN'])) { ?>
+      <p><?php echo date('d F, Y'); ?> | Welcome <?php if (isset($_SESSION['USER_LOGIN'])) { ?>
           <?php echo $_SESSION['USER_NAME'] ?>
         <?php
                                                   } else {
