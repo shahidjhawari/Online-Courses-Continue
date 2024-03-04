@@ -65,14 +65,14 @@ if ($mypage == 'contact.php') {
   <!--Header Section Start-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-      <div class="container container-css">
+      <div class="container-fluid">
         <a href="index.php"><img src="img/logo_bg_remove.png" alt="NAWAB LOGO" title="NAWAB ACADEMY - Jhawarian, Sargodha, Punjab, Pakistan" width="50px"></a>
         <a class="navbar-brand" href="index.php" title="NAWAB ACADEMY - Jhawarian, Sargodha, Punjab, Pakistan"><b>NAWAB ACADEMY</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
               <a class="nav-link" href="index.php"><b>HOME</b></a>
             </li>
@@ -86,15 +86,15 @@ if ($mypage == 'contact.php') {
               <a class="nav-link" href="contactus.php"><b>CONTACT US</b></a>
             </li>
             <?php if (isset($_SESSION['USER_LOGIN'])) { ?>
-            <li class="nav-item">
-              <a class="nav-link" href="admision.php"><b>ADMISSION</b></a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admision.php"><b>ADMISSION</b></a>
+              </li>
             <?php } ?>
             <li class="nav-item">
               <?php if (isset($_SESSION['USER_LOGIN'])) {
                 echo '<a href="logout.php" class="nav-link"><b>LOGOUT</b></a>';
               } else {
-                echo '<a href="login.php" class="nav-link"><b>SINGUP</b></a>';
+                echo '<a href="login.php" class="nav-link"><b>SIGNUP</b></a>';
               }
               ?>
             </li>
@@ -109,9 +109,9 @@ if ($mypage == 'contact.php') {
       <p><?php echo date('F d, Y'); ?> | Welcome <?php if (isset($_SESSION['USER_LOGIN'])) { ?>
           <?php echo $_SESSION['USER_NAME'] ?>
         <?php
-           } else {
-            echo 'User';
-          } ?></p>
+                                                  } else {
+                                                    echo 'User';
+                                                  } ?></p>
     </div>
     <div id="progress"></div>
   </header>
