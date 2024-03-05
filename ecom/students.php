@@ -1,13 +1,8 @@
-<?php require('top.php');
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "nawab8";
-
-$conn = new mysqli($servername, $username, $password, $database);
+<?php 
+require('top.php');
 
 $sql = "SELECT * FROM admissions";
-$result = $conn->query($sql);
+$result = $con->query($sql);
 ?>
 
 <style>

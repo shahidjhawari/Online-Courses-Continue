@@ -1,27 +1,21 @@
 <?php 
 require('top.php');
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "nawab8";
-
-$conn = new mysqli($servername, $username, $password, $database);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $full_name = $conn->real_escape_string($_POST['fullName']);
-    $father_name = $conn->real_escape_string($_POST['fatherName']);
-    $cnic = $conn->real_escape_string($_POST['cnic']);
-    $phone_number = $conn->real_escape_string($_POST['phoneNumber']);
-    $email = $conn->real_escape_string($_POST['email']);
-    $select_option = $conn->real_escape_string($_POST['select1']);
+    $full_name = $con->real_escape_string($_POST['fullName']);
+    $father_name = $con->real_escape_string($_POST['fatherName']);
+    $cnic = $con->real_escape_string($_POST['cnic']);
+    $phone_number = $con->real_escape_string($_POST['phoneNumber']);
+    $email = $con->real_escape_string($_POST['email']);
+    $select_option = $con->real_escape_string($_POST['select1']);
 
     $sql = "INSERT INTO admissions (full_name, father_name, cnic, phone_number, email, select_option)
             VALUES ('$full_name', '$father_name', '$cnic', '$phone_number', '$email', '$select_option')";
 
-    if ($conn->query($sql) === TRUE) {
+    if ($con->query($sql) === TRUE) {
         echo "<p class='msg-feild'>Your form send successfully, We will contact you on your phone number</p>";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $con->error;
     }
 }
 ?>
