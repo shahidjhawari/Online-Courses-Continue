@@ -31,6 +31,7 @@ $result = $conn->query($sql);
                     <th>Phone Number</th>
                     <th>Email</th>
                     <th>Select Option</th>
+                    <th>Image</th>
                     <th>Created At</th>
                 </tr>
             </thead>
@@ -46,6 +47,7 @@ $result = $conn->query($sql);
                         echo "<td>".$row["phone_number"]."</td>";
                         echo "<td>".$row["email"]."</td>";
                         echo "<td>".$row["select_option"]."</td>";
+                        echo "<td><img width='50px' src='".PRODUCT_IMAGE_SITE_PATH . $row["image_path"]."'></td>";
                         echo "<td>".$row["created_at"]."</td>";
                         echo "</tr>";
                     }
