@@ -1,4 +1,4 @@
-<?php 
+<?php
 require('top.php');
 
 $sql = "SELECT * FROM admissions";
