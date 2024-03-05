@@ -5,17 +5,9 @@ $username = "root";
 $password = "";
 $database = "nawab8";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Escape user inputs for security
     $full_name = $conn->real_escape_string($_POST['fullName']);
     $father_name = $conn->real_escape_string($_POST['fatherName']);
     $cnic = $conn->real_escape_string($_POST['cnic']);
@@ -23,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $conn->real_escape_string($_POST['email']);
     $select_option = $conn->real_escape_string($_POST['select1']);
 
-    // Insert data into database
     $sql = "INSERT INTO admissions (full_name, father_name, cnic, phone_number, email, select_option)
             VALUES ('$full_name', '$father_name', '$cnic', '$phone_number', '$email', '$select_option')";
 
@@ -33,9 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 }
-
-// Close connection
-$conn->close();
 ?>
 
 <style>

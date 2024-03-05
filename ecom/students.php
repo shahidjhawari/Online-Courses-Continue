@@ -45,6 +45,7 @@ $result = $conn->query($sql);
                         <h2><?php echo $row["full_name"] ?></h2>
                         <p>Father Name : <?php echo $row["father_name"] ?></p>
                         <p style="margin-top: -20px;">Course : <?php echo $row["select_option"] ?></p>
+                        <p style="margin-top: -20px;">Date : <?php echo $row["created_at"] ?></p>
                     </div>
                 </div>
         <?php }
