@@ -36,7 +36,7 @@ $result = $con->query($sql);
             while ($row = $result->fetch_assoc()) { ?>
                 <div class="col-md-4">
                     <div class="product-box">
-                        <img src="<?php echo PRODUCT_IMAGE_SITE_PATH . $row['image_path']; ?>" alt="Product Image" class="product-img">
+                        <img width="400px" src="<?php echo PRODUCT_IMAGE_SITE_PATH . $row['image_path']; ?>" alt="Product Image" class="product-img">
                         <h2><?php echo $row["full_name"] ?></h2>
                         <p>Father Name : <?php echo $row["father_name"] ?></p>
                         <p style="margin-top: -20px;">Course : <?php echo $row["select_option"] ?></p>

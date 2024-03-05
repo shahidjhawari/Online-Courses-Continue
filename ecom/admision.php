@@ -34,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     .msg-feild {
         text-align: center;
         color: red;
+        transform: translateY(550px);
         font-weight: bold;
     }
 </style>
