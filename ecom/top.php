@@ -83,6 +83,9 @@ if ($mypage == 'contact.php') {
               <a class="nav-link" href="coming_soon.php"><b>PROJECTS</b></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="students.php"><b>STUDENTS</b></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="contactus.php"><b>CONTACT US</b></a>
             </li>
             <?php if (isset($_SESSION['USER_LOGIN'])) { ?>
