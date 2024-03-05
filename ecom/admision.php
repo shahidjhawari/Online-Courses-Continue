@@ -9,16 +9,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $con->real_escape_string($_POST['email']);
     $select_option = $con->real_escape_string($_POST['select1']);
 
-    $sql = "INSERT INTO admissions (full_name, father_name, cnic, phone_number, email, select_option)
-            VALUES ('$full_name', '$father_name', '$cnic', '$phone_number', '$email', '$select_option')";
+    $target_dir = PRODUCT_IMAGE_SERVER_PATH;
+    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+    $image_name = basename($_FILES["fileToUpload"]["name"]);
+    move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+
+    $sql = "INSERT INTO admissions (full_name, father_name, cnic, phone_number, email, select_option, image_path)
+            VALUES ('$full_name', '$father_name', '$cnic', '$phone_number', '$email', '$select_option', '$image_name')";
 
     if ($con->query($sql) === TRUE) {
-        echo "<p class='msg-feild'>Your form send successfully, We will contact you on your phone number</p>";
+        echo "<p class='msg-feild'>Your form was sent successfully. We will contact you on your phone number.</p>";
     } else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
 }
 ?>
+
 
 <style>
     .box {
@@ -28,14 +34,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     .msg-feild {
         text-align: center;
         color: red;
-        transform: translateY(550px);
         font-weight: bold;
     }
 </style>
 
 <div class="container box">
   <h2>Admission Form</h2>
-  <form action="#" method="post">
+  <form action="#" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="fullName">Full Name:</label>
         <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter Full Name" required>
@@ -63,6 +68,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <option value="Web Designing">Web Designing</option>
             <option value="Ethical Hacking">Ethical Hacking</option>
         </select>
+    </div>
+    <div class="form-group">
+        <label for="fileToUpload">Upload Image:</label>
+        <input type="file" class="form-control-file" id="fileToUpload" name="fileToUpload" accept="image/*" required>
     </div>
     <button type="submit" class="btn btn-warning mt-3">Submit</button>
 </form>
