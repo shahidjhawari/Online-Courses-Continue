@@ -30,6 +30,7 @@ $result = $con->query($sql);
 </style>
 
 <div class="container">
+<h2 style="margin-top: 20px;">Students Records</h2>
     <div class="row">
         <?php
         if ($result->num_rows > 0) {
