@@ -35,45 +35,14 @@ header {
 }
 
 .about_section {
-    background: #2f3640;
+    background: #3D3B40;
     background-size: cover;
     background-position: bottom;
     color: #fff;
     box-shadow: -1px -1px 3px 1px black, 1px 1px 3px 1px #000;
-    transition: transform .1s;
-    transition-delay: 0
-}
-
-.about_section:hover {
-    transform: perspective(800px) translateZ(10px)
-}
-
-.about-css {
-    background: #2f3640;
-    background-size: cover;
-    background-position: bottom;
-    margin-top: 10px
-}
-
-.about-javascript {
-    background: #2f3640;
-    background-size: cover;
-    background-position: bottom;
-    margin-top: 10px
-}
-
-.about-php {
-    background: #2f3640;
-    background-size: cover;
-    background-position: bottom;
-    margin-top: 10px
-}
-
-.about-sql {
-    background: #2f3640;
-    background-size: cover;
-    background-position: right;
-    margin-top: 10px
+    margin-bottom: 20px;
+    width: 300px;
+    display: inline-block;
 }
 
 .about_section .heading_container {

@@ -62,7 +62,6 @@ foreach ($cat_arr as $list) {
       <div class="heading_container heading_center">
         <h2><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></h2>
         <p>Let's understand the fundamental and basic concept of HTML</p>
-        <p>We will teach you the basic and essentials of HTML in this course Click the button below to learn.</p>
       </div>
     </div>
   </section>
