@@ -42,6 +42,7 @@ $result = $con->query($sql);
                         <p>Father Name : <?php echo $row["father_name"] ?></p>
                         <p style="margin-top: -20px;">Course : <?php echo $row["select_option"] ?></p>
                         <p style="margin-top: -20px;">Date : <?php echo $row["created_at"] ?></p>
+                        <p style="margin-top: -20px;">Status : <?php echo $row["status"] ?></p>
                     </div>
                 </div>
         <?php }
