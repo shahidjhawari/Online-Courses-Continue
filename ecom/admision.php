@@ -1,37 +1,41 @@
-<?php
-require('top.php');
+<?php require('top.php');
 
-if (isset($_SESSION['form_submitted']) && $_SESSION['form_submitted'] === true) {
-    echo "<p class='msg-feild'>You have already submitted the form. We will contact you soon!</p>";
-    $disabled = "disabled";
-} else {
-    $disabled = "";
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $full_name = $con->real_escape_string($_POST['fullName']);
-        $father_name = $con->real_escape_string($_POST['fatherName']);
-        $cnic = $con->real_escape_string($_POST['cnic']);
-        $phone_number = $con->real_escape_string($_POST['phoneNumber']);
-        $email = $con->real_escape_string($_POST['email']);
-        $select_option = $con->real_escape_string($_POST['select1']);
+if (!isset($_SESSION['USER_LOGIN'])) { ?>
+    <script>
+        window.location.href = 'index.php';
+    </script>
+<?php } ?> <?php
+            if (isset($_SESSION['form_submitted']) && $_SESSION['form_submitted'] === true) {
+                echo "<p class='msg-feild'>You have already submitted the form. We will contact you soon!</p>";
+                $disabled = "disabled";
+            } else {
+                $disabled = "";
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $full_name = $con->real_escape_string($_POST['fullName']);
+                    $father_name = $con->real_escape_string($_POST['fatherName']);
+                    $cnic = $con->real_escape_string($_POST['cnic']);
+                    $phone_number = $con->real_escape_string($_POST['phoneNumber']);
+                    $email = $con->real_escape_string($_POST['email']);
+                    $select_option = $con->real_escape_string($_POST['select1']);
 
-        $target_dir = PRODUCT_IMAGE_SERVER_PATH;
-        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-        $image_name = basename($_FILES["fileToUpload"]["name"]);
-        move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+                    $target_dir = PRODUCT_IMAGE_SERVER_PATH;
+                    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+                    $image_name = basename($_FILES["fileToUpload"]["name"]);
+                    move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 
-        $sql = "INSERT INTO admissions (full_name, father_name, cnic, phone_number, email, select_option, image_path)
+                    $sql = "INSERT INTO admissions (full_name, father_name, cnic, phone_number, email, select_option, image_path)
                 VALUES ('$full_name', '$father_name', '$cnic', '$phone_number', '$email', '$select_option', '$image_name')";
 
-        if ($con->query($sql) === TRUE) {
-            echo "<p class='msg-feild'>Your form was sent successfully. We will contact you on your phone number.</p>";
-            $_SESSION['form_submitted'] = true;
-            $disabled = "disabled";
-        } else {
-            echo "Error: " . $sql . "<br>" . $con->error;
-        }
-    }
-}
-?>
+                    if ($con->query($sql) === TRUE) {
+                        echo "<p class='msg-feild'>Your form was sent successfully. We will contact you on your phone number.</p>";
+                        $_SESSION['form_submitted'] = true;
+                        $disabled = "disabled";
+                    } else {
+                        echo "Error: " . $sql . "<br>" . $con->error;
+                    }
+                }
+            }
+            ?>
 
 
 <style>
