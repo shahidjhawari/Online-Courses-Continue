@@ -141,5 +141,4 @@ if (!isset($_SESSION['USER_LOGIN'])) { ?>
     });
 </script>
 
-
 <?php require('footer.php'); ?>
