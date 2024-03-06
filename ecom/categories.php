@@ -47,7 +47,6 @@ if (isset($_GET['id']) && $_GET['id'] != '') {
 
 <script>
     $(document).ready(function () {
-            // Function to filter the tags based on the search input
             function filterTags() {
                 var searchInput = $('#searchInput').val().toLowerCase();
 
@@ -60,8 +59,6 @@ if (isset($_GET['id']) && $_GET['id'] != '') {
                     }
                 });
             }
-
-            // Trigger the filterTags function on keyup event in the search input
             $('#searchInput').on('keyup', filterTags);
         });
 </script>
