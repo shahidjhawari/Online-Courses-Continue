@@ -1,7 +1,7 @@
 <?php require('top.php'); ?>
 
 <!--Banner Section Start-->
-<div id="carouselExample" class="carousel slide inner-css">
+<div id="carouselExample" class="carousel slide inner-css" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="img/banner1.webp" class="d-block w-100" alt="...">
@@ -69,5 +69,13 @@ foreach ($cat_arr as $list) {
 }
 ?>
 <!--Categories Section End-->
+
+<script>
+  $(document).ready(function() {
+    $('#carouselExample').carousel({
+      interval: 1000
+    });
+  });
+</script>
 
 <?php require('footer.php'); ?>
