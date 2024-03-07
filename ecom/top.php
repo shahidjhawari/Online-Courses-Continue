@@ -80,7 +80,7 @@ if ($mypage == 'contact.php') {
               <a class="nav-link" href="index.php"><b>HOME</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="coming_soon.php"><b>COURSES</b></a>
+              <a class="nav-link" href="courses.php"><b>COURSES</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="coming_soon.php"><b>PROJECTS</b></a>

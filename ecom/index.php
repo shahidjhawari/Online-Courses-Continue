@@ -77,9 +77,9 @@
 <!--Categories Section End-->
 
 <script>
-  jQuery(document).ready(function() {
-    jQuery('#carouselExample').carousel({
-      interval: 1000
+  $(document).ready(function() {
+    $('#carouselExample').carousel({
+      interval: 3000
     });
   });
 </script>
