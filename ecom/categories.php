@@ -32,6 +32,8 @@ if (isset($_GET['id']) && $_GET['id'] != '') {
         <!-- Search Tag End -->
         <div class="list-group all-html-tags">
             <?php
+            // Reverse the array to show categories in descending order
+            $get_product = array_reverse($get_product);
             foreach ($get_product as $list) {
             ?>
                 <code>
@@ -43,6 +45,7 @@ if (isset($_GET['id']) && $_GET['id'] != '') {
 <?php } else {
     echo "Data not found";
 } ?>
+
 <!--HTML All Tags Section End-->
 
 <script>
