@@ -23,7 +23,7 @@ if (isset($_GET['id'])) {
 <!-- YouTube Video Section start -->
 <div class="container yt-video-html-box">
     <div class="video-wrapper">
-        <?php echo $get_product['0']['short_desc']?>
+        <?php echo $get_product['0']['short_desc'] ?>
     </div>
 </div>
 <!-- YouTube Video Section start -->
@@ -32,7 +32,7 @@ if (isset($_GET['id'])) {
 <!-- all course add heading start -->
 <div class="domain tag-heading">
     <div class="titlepage text_align_center">
-        <h2><?php echo $get_product['0']['name']?> TAG <span class="blue_light">EXAMPLE</span></h2>
+        <h2><?php echo $get_product['0']['name'] ?> TAG <span class="blue_light">EXAMPLE</span></h2>
     </div>
 </div>
 <!-- all course add heading start -->
@@ -42,14 +42,15 @@ if (isset($_GET['id'])) {
     <div id="carouselExample" class="carousel slide inner-css">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$get_product['0']['image']?>" class="d-block w-100" alt="a tag html">
+                <img src="<?php echo PRODUCT_IMAGE_SITE_PATH . $get_product['0']['image']; ?>" class="d-block w-100" alt="a tag html">
             </div>
         </div>
     </div>
 </div>
 <div class="container d-flex align-items-center justify-content-center download-btn">
-<a href="<?php PRODUCT_IMAGE_SITE_PATH.$get_product['0']['image']?>" download="a.png" class="btn btn-danger">Download</a>
+    <a href="<?php echo PRODUCT_IMAGE_SITE_PATH . $get_product['0']['image']; ?>" download="<?php echo $get_product['0']['image'] . ' NAWAB ACADEMY'; ?>" class="btn btn-danger">Download</a>
 </div>
 <!--Tag Section End-->
+
 
 <?php require('footer.php'); ?>
