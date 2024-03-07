@@ -35,6 +35,7 @@
         <div class="text-left mb-4">
           <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 1px;">WHY WE ARE</h5>
           <h1>Jhawarian`s No. #1 Academy</h1>
+          <div class="g-ytsubscribe" data-channelid="UC0ab8mhKDmqQqNur4c9zg7Q" data-layout="full" data-count="default"></div>
         </div>
         <p>Jhawarian's number one academy teaching you website designing and website development as well as android
           app development, this academy is very famous for its quality and best quality of education, you can check
@@ -51,7 +52,7 @@
     <h2>ALL COURSES <span class="blue_light">HERE</span></h2>
   </div>
 </div>
-<!-- all course add heading start -->
+<!-- all course add heading start --> 
 
 <!--Categories Section Start-->
 <div class="container">

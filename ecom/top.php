@@ -56,6 +56,7 @@ if ($mypage == 'contact.php') {
 
   <!--JQuery files Here-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://apis.google.com/js/platform.js"></script>
   
   <!--Own files Here-->
   <link rel="stylesheet" href="css/styles.css">
