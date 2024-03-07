@@ -54,25 +54,31 @@
 <!-- all course add heading start -->
 
 <!--Categories Section Start-->
-<?php
-foreach ($cat_arr as $list) {
-?>
-  <section class="about_section layout_padding">
-    <div class="container  ">
-      <div class="heading_container heading_center">
-        <h2><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></h2>
-        <p>Let's understand the fundamental and basic concept of HTML</p>
+<div class="container">
+  <div class="row">
+    <?php
+    foreach ($cat_arr as $list) {
+    ?>
+      <div class="col-md-4">
+        <div class="product-box crs-box">
+          <div class="image-wrapper">
+            <a href="categories.php?id=<?php echo $list['id']?>"><img src="img/course-bg.webp" alt="Product Image" class="product-img"></a>
+            <div class="text-overlay">
+              <h2><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-<?php
-}
-?>
+    <?php
+    }
+    ?>
+  </div>
+</div>
 <!--Categories Section End-->
 
 <script>
-  $(document).ready(function() {
-    $('#carouselExample').carousel({
+  jQuery(document).ready(function() {
+    jQuery('#carouselExample').carousel({
       interval: 1000
     });
   });

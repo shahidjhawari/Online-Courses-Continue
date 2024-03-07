@@ -34,38 +34,51 @@ header {
     padding-left: 40px
 }
 
-.about_section {
-    background: #3D3B40;
-    background-size: cover;
-    background-position: bottom;
-    color: #fff;
-    box-shadow: -1px -1px 3px 1px black, 1px 1px 3px 1px #000;
-    margin-bottom: 20px;
-    width: 300px;
-    display: inline-block;
+
+/* Courses Box Section Start */
+.product-box {
+    position: relative;
+    text-align: center;
 }
 
-.about_section .heading_container {
-    margin-bottom: 45px
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
 }
 
-.about_section .row {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+.product-img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-.about_section .img-box img {
-    max-width: 100%
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.672);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.about_section .detail-box h3 {
-    font-weight: 700
+.text-overlay h2,
+.text-overlay p {
+    margin: 0;
 }
 
-.about_section .detail-box p {
-    margin-top: 15px
+.text-overlay h2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #191919;
 }
+
+/* Courses Box Section End */
+
 
 .heading_container a {
     display: inline-block;
@@ -258,13 +271,13 @@ img {
 .yt-video-html-box {
     position: relative;
     width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%;
     height: 0;
 }
 
