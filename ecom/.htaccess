@@ -1,4 +1,5 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteEngine On
+
+# Rewrite URLs without .php extension to their corresponding .php files
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.*)$ $1.php
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
