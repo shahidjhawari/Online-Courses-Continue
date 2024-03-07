@@ -43,6 +43,9 @@ $result = $con->query($sql);
                         <p style="margin-top: -20px;">Course : <?php echo $row["select_option"] ?></p>
                         <p style="margin-top: -20px;">Date : <?php echo $row["created_at"] ?></p>
                         <p style="margin-top: -20px;">Status : <?php echo $row["status"] ?></p>
+                        <?php if (!empty($row['certificate'])) { ?>
+                            <a href="<?php echo CERTIFICATE_FILE_SITE_PATH . $row['certificate']; ?>" download class="btn btn-warning btn-sm">Download Certificate</a>
+                        <?php } ?>
                     </div>
                 </div>
         <?php }
@@ -51,4 +54,5 @@ $result = $con->query($sql);
         }
         ?>
     </div>
-</div <?php require('footer.php'); ?>
+</div>
+<?php require('footer.php'); ?>
