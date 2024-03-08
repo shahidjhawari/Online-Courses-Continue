@@ -149,7 +149,7 @@ if(isset($_POST['submit'])){
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Detail</label>
-									<input type="text" name="price" placeholder="Enter detail" class="form-control" required>
+									<input type="text" name="price" placeholder="Enter detail" class="form-control">
 								</div>
 								
 								<div class="form-group">
@@ -159,7 +159,7 @@ if(isset($_POST['submit'])){
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Short Description</label>
-									<textarea name="short_desc" placeholder="Enter short description" class="form-control" required><?php echo $short_desc?></textarea>
+									<textarea name="short_desc" placeholder="Enter short description" class="form-control"><?php echo $short_desc?></textarea>
 								</div>
 								
 								<div class="form-group">
