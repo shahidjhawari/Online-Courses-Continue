@@ -149,7 +149,7 @@ if(isset($_POST['submit'])){
 								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Detail</label>
-									<input type="text" name="price" placeholder="Enter detail" class="form-control">
+									<input type="text" name="price" placeholder="Enter detail" class="form-control" value="<?php echo $price?>">
 								</div>
 								
 								<div class="form-group">
