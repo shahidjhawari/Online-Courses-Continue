@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: sql204.infinityfree.com
--- Generation Time: Mar 08, 2024 at 10:35 AM
+-- Generation Time: Mar 08, 2024 at 11:14 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.2.22
 
@@ -74,6 +74,32 @@ INSERT INTO `admissions` (`id`, `full_name`, `certificate`, `father_name`, `cnic
 (8, 'Hafiz Muhammad Bilal', 'hafizbilal.png', 'Ghulam Mustafa', '3333333333333', '12345678911', 'dummy', 'hafizbilal.jpg', 'Web Designing', 'Completed', '2023-11-14 05:00:00'),
 (9, 'M Ameer Hamza', 'ammerhamza.png', 'Khushi M', '2426462552863', '03092286074', 'ah7786736@gmail.com', '1708937167125.jpg', 'Web Designing', 'Completed', '2023-08-09 13:51:37'),
 (10, 'Umar Malik', 'umarmalik.png', 'Muhammad Riaz', '3333333333333', '12345678911', 'dumy', 'umarmalik.jpg', 'Web Designing', 'Completed', '2023-11-14 05:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `banner`
+--
+
+CREATE TABLE `banner` (
+  `id` int(11) NOT NULL,
+  `heading1` varchar(255) NOT NULL,
+  `heading2` varchar(255) NOT NULL,
+  `btn_txt` varchar(255) DEFAULT NULL,
+  `btn_link` varchar(55) DEFAULT NULL,
+  `image` varchar(255) NOT NULL,
+  `order_no` int(11) NOT NULL,
+  `status` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `banner`
+--
+
+INSERT INTO `banner` (`id`, `heading1`, `heading2`, `btn_txt`, `btn_link`, `image`, `order_no`, `status`) VALUES
+(0, '1', '1', '1', '1', '377892178_ai-banner2.webp', 0, 1),
+(0, '2', '2', '2', '2', '797943074_banner1.webp', 2, 1),
+(0, '3', '3', '3', '3', '624163056_banner3.webp', 3, 1);
 
 -- --------------------------------------------------------
 
@@ -162,7 +188,18 @@ INSERT INTO `product` (`id`, `categories_id`, `name`, `mrp`, `price`, `qty`, `im
 (32, 11, 'canvas', 0, 'Used to draw graphics, on the fly, via scripting (usually JavaScript)', 0, '450698742_canvas-tag.png', '<iframe src=\"https://www.youtube.com/embed/87GjA2-28b0?si=VlWws6geNh2Bo_7S\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Used to draw graphics, on the fly, via scripting (usually JavaScript)', 0, 'canvas tag nawab academy', 'canvas tag nawab academy', 'canvas tag nawab academy', 1),
 (33, 11, 'caption', 0, 'Defines a table caption', 0, '490406659_caption-tag.png', '<iframe src=\"https://www.youtube.com/embed/87GjA2-28b0?si=3mArAhpMP3vGc6CU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines a table captionDefines a table caption', 0, 'caption tag nawab academy', 'caption tag nawab academy', 'caption tag nawab academy', 1),
 (34, 11, 'city', 0, 'Defines the title of a work', 0, '212951061_cite-tag.png', '<iframe src=\"https://www.youtube.com/embed/wB4_crX9xP8?si=-0pDxfm30U4RL9RI\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines the title of a work', 0, 'cite tag nawab academy', 'cite tag nawab academy', 'cite tag nawab academy', 1),
-(35, 11, 'code', 0, 'Defines a piece of computer code', 0, '417255922_code-tag.png', '<iframe src=\"https://www.youtube.com/embed/9KIZ8ztXndg?si=56KaJ-n21tgufFbb\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines a piece of computer code', 0, 'code tag nawab academy', 'code tag nawab academy', 'code tag nawab academy', 1);
+(35, 11, 'code', 0, 'Defines a piece of computer code', 0, '417255922_code-tag.png', '<iframe src=\"https://www.youtube.com/embed/9KIZ8ztXndg?si=56KaJ-n21tgufFbb\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines a piece of computer code', 0, 'code tag nawab academy', 'code tag nawab academy', 'code tag nawab academy', 1),
+(36, 11, 'col', 0, 'Specifies column properties for each column within a colgroup element', 0, '528622395_col-tag.png', '<iframe src=\"https://www.youtube.com/embed/87GjA2-28b0?si=M3FAbCjqiaSj1Obv\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Specifies column properties for each column within a colgroup element', 0, 'col tag nawab academy', 'col tag nawab academy', 'col tag nawab academy', 1),
+(37, 11, 'colgroup', 0, 'Specifies a group of one or more columns in a table for formatting', 0, '465313899_colgroup-tag.png', '<iframe src=\"https://www.youtube.com/embed/87GjA2-28b0?si=zSMaGRvxPQ76t7IH\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Specifies a group of one or more columns in a table for formatting', 0, 'colgroup tag nawab academy', 'colgroup tag nawab academy', 'colgroup tag nawab academy', 1),
+(38, 11, 'data', 0, 'Adds a machine-readable translation of a given content', 0, '570722508_data-tag.png', '<iframe  src=\"https://www.youtube.com/embed/fWa-_2Zy6Z4?si=w83QSRGCP_SRLfR7\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Adds a machine-readable translation of a given content', 0, 'data tag nawab academy', 'data tag nawab academy', 'data tag nawab academy', 1),
+(39, 11, 'datalist', 0, 'Specifies a list of pre-defined options for input controls', 0, '701983917_datalist-tag.png', '<iframe src=\"https://www.youtube.com/embed/Si2RaeX_smo?si=HvH7Ul-_hQy5OVSN\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Specifies a list of pre-defined options for input controls', 0, 'datalist tag nawab academy', 'datalist tag nawab academy', 'datalist tag nawab academy', 1),
+(40, 11, 'dd', 0, 'Defines a description/value of a term in a description list', 0, '350526868_dd-tag.png', '<iframe src=\"https://www.youtube.com/embed/87GjA2-28b0?si=xS5A_X6pOeu557oO\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines a description/value of a term in a description list', 0, 'dd tag nawab academy', 'dd tag nawab academy', 'dd tag nawab academy', 1),
+(41, 11, 'del', 0, 'Defines text that has been deleted from a document', 0, '879074373_del-tag.png', '<iframe src=\"https://www.youtube.com/embed/x9NbGgN5DKI?si=H-YrzRgH3p6_1avg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines text that has been deleted from a document', 0, 'del tag nawab academy', 'del tag nawab academy', 'del tag nawab academy', 1),
+(42, 11, 'details', 0, 'Defines additional details that the user can view or hide', 0, '449501598_detail-tag.png', '<iframe src=\"https://www.youtube.com/embed/g7brpCW219o?si=oJuIWxaWqRRU0gPI\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines additional details that the user can view or hide', 0, 'details tag nawab academy', 'details tag nawab academy', 'details tag nawab academy', 1),
+(43, 11, 'dfn', 0, 'Specifies a term that is going to be defined within the content', 0, '221897585_dfn-tag.png', '<iframe src=\"https://www.youtube.com/embed/28_2Easlw-U?si=aafG4t8xz9KGrsQB\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Specifies a term that is going to be defined within the content', 0, 'dfn tag nawab academy', 'dfn tag nawab academy', 'dfn tag nawab academy', 1),
+(44, 11, 'dialog', 0, 'Defines a dialog box or window', 0, '603267424_dialog-tag.png', '<iframe src=\"https://www.youtube.com/embed/wW8PgczsvoU?si=o_ioGX4reWKkHBtq\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines a dialog box or window', 0, 'dialog tag nawab academy', 'dialog tag nawab academy', 'dialog tag nawab academy', 1),
+(45, 11, 'div', 0, 'Defines a section in a document', 0, '469931860_div-tag.png', '<iframe src=\"https://www.youtube.com/embed/e74fH_Go8Nk?si=pwO13HapiCrMM3_r\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines a section in a document', 0, 'div tag nawab academy', 'div tag nawab academy', 'div tag nawab academy', 1),
+(46, 11, 'dl', 0, 'Defines a description list', 0, '640788584_dl-tag.png', '<iframe src=\"https://www.youtube.com/embed/Ogz9s4EZII4?si=mH4omir8-KhB3UIl\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 'Defines a description list', 0, 'dl tag nawab academy', 'dl tag nawab academy', 'dl tag nawab academy', 1);
 
 -- --------------------------------------------------------
 
@@ -266,7 +303,7 @@ ALTER TABLE `contact_us`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `users`
