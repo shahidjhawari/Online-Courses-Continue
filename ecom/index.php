@@ -1,17 +1,19 @@
 <?php require('top.php'); ?>
 
-<!--Banner Section Start-->
+<!-- Banner Section Start -->
 <div id="carouselExample" class="carousel slide inner-css" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/banner3.webp" class="d-block w-100 slider-banner-img" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/ai-banner2.webp" class="d-block w-100 slider-banner-img" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/banner1.webp" class="d-block w-100 slider-banner-img" alt="...">
-    </div>
+    <?php
+    $active = true;
+    while ($rowBanner = mysqli_fetch_assoc($resBanner)) {
+    ?>
+      <div class="carousel-item <?php echo $active ? 'active' : ''; ?>">
+        <img src="<?php echo BANNER_SITE_PATH . $rowBanner['image']; ?>" class="d-block w-100 slider-banner-img" alt="...">
+      </div>
+    <?php
+      $active = false;
+    }
+    ?>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -22,7 +24,8 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<!--Banner Section End-->
+<!-- Banner Section End -->
+
 
 <!-- Why We are start -->
 <div class="container-fluid py-1">
@@ -52,7 +55,7 @@
     <h2>ALL COURSES <span class="blue_light">HERE</span></h2>
   </div>
 </div>
-<!-- all course add heading start --> 
+<!-- all course add heading start -->
 
 <!--Categories Section Start-->
 <div class="container">
@@ -63,9 +66,9 @@
       <div class="col-md-4">
         <div class="product-box crs-box">
           <div class="image-wrapper">
-            <a href="categories.php?id=<?php echo $list['id']?>"><img src="img/course-bg.webp" alt="Product Image" class="product-img"></a>
+            <a href="categories.php?id=<?php echo $list['id'] ?>"><img src="img/course-bg.webp" alt="Product Image" class="product-img"></a>
             <div class="text-overlay">
-              <h2><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></h2>
+              <h2><a href="categories.php?id=<?php echo $list['id'] ?>"><?php echo $list['categories'] ?></a></h2>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 require('connection.inc.php');
 require('functions.inc.php');
 $cat_res = mysqli_query($con, "select * from categories where status=1 order by categories DESC");
+$resBanner=mysqli_query($con,"select * from banner where status='1' order by order_no asc");
 $cat_arr = array();
 while ($row = mysqli_fetch_assoc($cat_res)) {
   $cat_arr[] = $row;
