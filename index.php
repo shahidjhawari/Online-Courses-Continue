@@ -93,12 +93,36 @@
   <div class="row">
     <div class="col-md-6">
       <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7MSrQ6_nZuc?si=ScZFxkHPGRE7EMse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7MSrQ6_nZuc?si=ScZFxkHPGRE7EMse" title="Hammer vs Rabbit🐇 Javascript Game | javascript projects for beginners | Project 3 | URDU/HINDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
     <div class="col-md-6 js-yotube-para">
       <h2>JavaScript Game</h2>
       <p>"Hammer vs Rabbit" is a beginner-friendly JavaScript game project where players control a hammer to fend off incoming rabbits. This tutorial, presented in Urdu/Hindi, guides beginners through creating this interactive game using JavaScript.</p>
+    </div>
+  </div>
+</div>
+<!--YouTube Video Section End-->
+
+<!-- all course add heading start -->
+<div class="domain">
+  <div class="titlepage text_align_center">
+    <h2>HTML5 IN ONE <span class="blue_light">VIDEO</span></h2>
+  </div>
+</div>
+<!-- all course add heading start -->
+
+<!--YouTube Video Section Start-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 order-md-2">
+      <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Lb17BGSmE54?si=DYf8_-k7nszkeAbp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-6 about-video js-yotube-para">
+      <h2>Complete HTML Course</h2>
+      <p>This tutorial is a comprehensive introduction to HTML, designed specifically for beginners in web development. Presented in a single video format and conducted in Urdu/Hindi, it covers the basics of HTML, offering foundational knowledge necessary for creating web pages.</p>
     </div>
   </div>
 </div>
