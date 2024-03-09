@@ -128,6 +128,30 @@
 </div>
 <!--YouTube Video Section End-->
 
+<!-- all course add heading start -->
+<div class="domain">
+  <div class="titlepage text_align_center">
+    <h2>CSS <span class="blue_light">TUTORIALS</span></h2>
+  </div>
+</div>
+<!-- all course add heading start -->
+
+<!--YouTube Video Section Start-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/I4xTbqrBxkY?si=PdMjpMLgbwU6H_Ah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-6 js-yotube-para">
+      <h2>CSS Full Course</h2>
+      <p>This tutorial titled "CSS Introduction" is part of a web development course offered in Urdu/Hindi. It provides beginners with a foundational understanding of CSS (Cascading Style Sheets), a crucial component of web design. Topics covered likely include CSS syntax, selectors, properties, and how to apply styling to HTML elements to enhance the visual presentation of web pages. This resource serves as an entry point for individuals interested in learning web development in their native Urdu/Hindi language..</p>
+    </div>
+  </div>
+</div>
+<!--YouTube Video Section End-->
+
 <script>
   $(document).ready(function() {
     $('#carouselExample').carousel({
