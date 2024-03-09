@@ -64,7 +64,7 @@ if ($mypage == 'contact.php') {
   <!--Own files Here-->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="icon" href="img/logo_bg_remove.png">
+  <link rel="icon" href="img/logo_bg_remove.webp">
 </head>
 
 <body>
