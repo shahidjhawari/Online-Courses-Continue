@@ -146,7 +146,7 @@
     </div>
     <div class="col-md-6 js-yotube-para">
       <h2>CSS Full Course</h2>
-      <p>This tutorial titled "CSS Introduction" is part of a web development course offered in Urdu/Hindi. It provides beginners with a foundational understanding of CSS (Cascading Style Sheets), a crucial component of web design. Topics covered likely include CSS syntax, selectors, properties, and how to apply styling to HTML elements to enhance the visual presentation of web pages. This resource serves as an entry point for individuals interested in learning web development in their native Urdu/Hindi language..</p>
+      <p>This tutorial titled "CSS Introduction" is part of a web development course offered in Urdu/Hindi. It provides beginners with a foundational understanding of CSS, a crucial component of web design.</p>
     </div>
   </div>
 </div>
