@@ -50,6 +50,7 @@ if ($mypage == 'contact.php') {
   <meta name="discription" content="<?php echo $meta_desc ?>">
   <meta name="author" content="MAHAR SHAHID IQBAL JHAWARI">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-6521349394702804">
   <title><?php echo $meta_title ?></title>
 
   <!--Bootstrap files Here-->
