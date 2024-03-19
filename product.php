@@ -48,7 +48,7 @@ if (isset($_GET['id'])) {
     </div>
 </div>
 <div class="container d-flex align-items-center justify-content-center download-btn">
-    <a href="<?php echo PRODUCT_IMAGE_SITE_PATH . $get_product['0']['image']; ?>" download="<?php echo $get_product['0']['image'] . ' NAWAB ACADEMY'; ?>" class="btn btn-danger">Download</a>
+    <a href="<?php echo PRODUCT_IMAGE_SITE_PATH . $get_product['0']['image']; ?>" download="<?php echo $get_product['0']['image'] . ' NAWAB ACADEMY.png'; ?>" class="btn btn-danger">Download</a>
 </div>
 <!--Tag Section End-->
 
