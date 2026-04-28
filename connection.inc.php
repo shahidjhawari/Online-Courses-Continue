@@ -8,7 +8,7 @@ session_start();
 // define('SERVER_PATH', $_SERVER['DOCUMENT_ROOT'] . '/');
 // define('SITE_PATH', $protocol . $_SERVER['HTTP_HOST'] . '/');
 
-$con=mysqli_connect("localhost","root","","nawab8");
+$con=mysqli_connect("localhost","root","","nawab");
 define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/nawab/');
 define('SITE_PATH','http://127.0.0.1/nawab/');
 
